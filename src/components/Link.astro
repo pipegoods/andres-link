@@ -1,0 +1,37 @@
+---
+import Github from './icons/Github.astro';
+import Instagram from './icons/Instagram.astro';
+import Linkedin from './icons/Linkedin.astro';
+import Url from './icons/Url.astro';
+import XTwitter from './icons/X-twitter.astro';
+import Youtube from './icons/Youtube.astro';
+
+interface Props {
+  icon: string;
+  title: string;
+  description: string;
+  url: string;
+}
+
+const { icon, title, description, url } = Astro.props;
+---
+
+<a
+  href={url}
+  class="p-3 flex border border-black rounded-2xl bg-white"
+>
+  <span
+    class="size-8 mr-5 rounded-lg flex justify-center items-center"
+  >
+    {icon === 'instagram' && <Instagram />}
+    {icon === 'linkedin' && <Linkedin />}
+    {icon === 'url' && <Url />}
+    {icon === 'xtwitter' && <XTwitter />}
+    {icon === 'youtube' && <Youtube />}
+    {icon === 'github' && <Github />}
+  </span>
+  <div>
+    <h2 class="text-blue-500">{title}</h2>
+    <p class="text-orange-950 mt-1">{description}</p>
+  </div>
+</a>

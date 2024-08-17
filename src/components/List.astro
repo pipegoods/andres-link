@@ -1,0 +1,21 @@
+---
+import Link from './Link.astro';
+import dataList from '../data/user.json';
+
+const items = dataList.links;
+---
+
+<div class="mt-12 grid gap-8">
+  {
+    items.map((item) => {
+      return (
+        <Link
+          icon={item.icon}
+          title={item.title}
+          description={item.description}
+          url={item.url}
+        />
+      );
+    })
+  }
+</div>

@@ -1,0 +1,30 @@
+{
+    "name": "Andrés Vizcaíno",
+    "profession": "Full Stack Developer",
+    "links": [
+        {
+            "url": "https://andresvizcaino.com",
+            "icon": "url",
+            "title": "Portafilio",
+            "description": "Mira mis ultimos proyectos"
+        },
+        {
+            "url": "https://github.com/pipegoods",
+            "icon": "github",
+            "title": "Github",
+            "description": "Mira mis ultimos repositorios"
+        },
+        {
+            "url": "https://www.linkedin.com/in/andres-vizcaino-salazar/",
+            "icon": "linkedin",
+            "title": "LinkedIn",
+            "description": "Haz conexiones conmigo"
+        },
+        {
+            "url": "https://twitter.com/pipegoods",
+            "icon": "xtwitter",
+            "title": "Twitter",
+            "description": "Sigueme en Twitter"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+---
+import UserProfileImage from '../assets/user-profile-image.webp';
+import dataList from '../data/user.json';
+---
+
+<header class="flex mt-10 flex-col items-center w-full">
+  <div class="rounded-full border border-black p-2">
+    <figure class="size-24 rounded-full border border-black">
+      <img
+        src={UserProfileImage.src}
+        alt={'Foto perfil de ' + dataList.name}
+        class="w-full object-cover object-center rounded-full"
+      />
+    </figure>
+  </div>
+  <div class="mt-5 text-center">
+    <h1 class="text-lg">{dataList.name}</h1>
+    <p class="text-sm">{dataList.profession}</p>
+  </div>
+</header>

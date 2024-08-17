@@ -1,0 +1,43 @@
+---
+import '@fontsource/poppins/300.css';
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+import '@fontsource/poppins/700.css';
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="font-sans">
+    <slot />
+
+    <footer class="text-center mt-10">
+      <p class="text-sm text-gray-500">
+        Hecho moviendo las manitas por
+        <a
+          href="https://github.com/pipegoods"
+          class="text-blue-500 hover:underline"
+        >
+          pipegoods
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  body {
+    background-color: #dfdbe5;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+  }
+</style>
